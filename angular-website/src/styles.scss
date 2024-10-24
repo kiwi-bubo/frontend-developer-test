@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+$primary-color: #186553;
+$secondary-color: #682c5d;
+$font-color: #31363c;
+$button-color: #29a98b;
+$button-shadow-color: #20876f;
+$background-left: #CDEBE3;
+$background-right: #EAF6F4;
+
+html {
+   body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+
+    font-family: 'Roboto', sans-serif;
+    p {
+        color: $font-color;
+    }
+   }
+
+}
