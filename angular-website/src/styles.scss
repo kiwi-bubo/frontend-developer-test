@@ -7,13 +7,14 @@ $button-color: #29a98b;
 $button-shadow-color: #20876f;
 $background-left: #CDEBE3;
 $background-right: #EAF6F4;
+$left-section-width: calc(100% * (2 / 3));
+$right-section-width: calc(100% - #{$left-section-width});
 
 html {
    body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    height: 100vh;
 
     font-family: 'Roboto', sans-serif;
     p {
