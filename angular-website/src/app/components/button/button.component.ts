@@ -9,6 +9,6 @@ export class ButtonComponent {
   @Input() buttonText: string = '';
 
   logMessage() {
-    console.log("I hope you like the look of the webpage! :)");
+    console.log("I hope you like the look of the webpage! \nCheck it out in smaller screen sizes as well :)");
   }
 }

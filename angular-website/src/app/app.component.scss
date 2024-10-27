@@ -1,13 +1,16 @@
 @import 'src/styles.scss';
 
+$first-section-tablet-size: 20rem;
+$first-section-phone-size: 15rem;
+
 .homepage-container {
     height: 100vh;
     background: 
         url('../assets/images/illustration.png') center center no-repeat,
         linear-gradient(
         to right,
-        $background-left $left-section-width,
-        $background-right $right-section-width
+        $background-first $left-section-width,
+        $background-second $right-section-width
     );
 }
 
@@ -55,5 +58,53 @@ main {
         p {
             font-size: smaller;
         }
+    }
+}
+
+@media (max-width: 960px) {
+    .homepage-container {
+        height: 100%;
+        background: 
+            url('../assets/images/illustration.png') top right no-repeat,
+            linear-gradient(
+            to bottom,
+            $background-first $top-section-heght,
+            $background-second $bottom-section-height
+        );
+    }
+
+    main {
+        flex-direction: column;
+
+        section:first-of-type {
+            height: $first-section-tablet-size;
+            width: 100%;
+            margin-bottom: 2rem;
+        }
+        
+        section:nth-of-type(2) {
+            width: 100%;
+            height: calc(100% - $first-section-tablet-size);
+            padding-top: 1rem;
+            padding-bottom: 5rem;
+        }
+    }
+}
+
+@media (max-width: 736px) {
+    .homepage-container {
+        height: 100%;
+        background: 
+            linear-gradient(
+            to bottom,
+            $background-first $top-section-heght,
+            $background-second $bottom-section-height
+        );
+    }
+    main {
+        section:first-of-type {
+            height: $first-section-phone-size;
+        }
+        
     }
 }
