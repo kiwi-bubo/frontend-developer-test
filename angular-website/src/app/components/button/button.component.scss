@@ -1,0 +1,15 @@
+@import 'src/styles.scss';
+
+.my-button {
+    color: white;
+    text-transform: uppercase;
+    background-color: $button-color;
+    border: none;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+
+    &:hover {
+        background-color: $button-shadow-color;
+    }
+}
