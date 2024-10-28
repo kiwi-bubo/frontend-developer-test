@@ -8,7 +8,7 @@
 .homepage-container {
   height: 100vh;
   background:
-    url('../public/assets/illustration.png') center center no-repeat,
+    url('assets/illustration.png') center center no-repeat,
     linear-gradient(to right,
       var(--background-first) var(--left-section-width),
       var(--background-second) var(--right-section-width));
@@ -65,7 +65,7 @@ main section p {
   .homepage-container {
     height: 100vh;
     background:
-      url('../public/assets/illustration.png') top right no-repeat,
+      url('assets/illustration.png') top right no-repeat,
       linear-gradient(
         to bottom,
         var(--background-first) var(--top-section-height),

@@ -9,8 +9,8 @@ $background-first: #CDEBE3;
 $background-second: #EAF6F4;
 $left-section-width: calc(100% * (2 / 3));
 $right-section-width: calc(100% - $left-section-width);
-$top-section-heght: 50%;
-$bottom-section-height: calc(100% - $top-section-heght);
+$top-section-height: 50%;
+$bottom-section-height: calc(100% - $top-section-height);
 
 html {
    body {

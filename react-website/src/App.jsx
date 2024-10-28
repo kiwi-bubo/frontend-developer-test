@@ -1,4 +1,4 @@
-import logo from '../public/assets/logo.png'
+import logo from './assets/logo.png'
 import './App.css'
 import { Button } from './components/Button/Button'
 

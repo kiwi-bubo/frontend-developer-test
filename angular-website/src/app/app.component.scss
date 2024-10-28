@@ -68,7 +68,7 @@ main {
             url('../assets/images/illustration.png') top right no-repeat,
             linear-gradient(
             to bottom,
-            $background-first $top-section-heght,
+            $background-first $top-section-height,
             $background-second $bottom-section-height
         );
     }
@@ -97,7 +97,7 @@ main {
         background: 
             linear-gradient(
             to bottom,
-            $background-first $top-section-heght,
+            $background-first $top-section-height,
             $background-second $bottom-section-height
         );
     }
