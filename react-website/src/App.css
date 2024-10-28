@@ -1,42 +1,62 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import './index.css';
+
+:root {
+  --first-section-tablet-size: 20rem;
+  --first-section-phone-size: 15rem;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.homepage-container {
+  height: 100vh;
+  background:
+    url('../public/assets/illustration.png') center center no-repeat,
+    linear-gradient(to right,
+      var(--background-first) var(--left-section-width),
+      var(--background-second) var(--right-section-width));
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-top: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+main {
+  display: flex;
+  flex-direction: row;
 }
 
-.card {
-  padding: 2em;
+main section {
+  box-sizing: border-box;
+  padding: 5rem 4rem 0 4rem;
 }
 
-.read-the-docs {
-  color: #888;
+main section p {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.title-section {
+  width: var(--left-section-width);
+}
+
+.title {
+  font-size: xx-large;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.description-section {
+  width: var(--right-section-width);
+}
+
+.sub-title {
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+.description-section p {
+  font-size: smaller;
 }
