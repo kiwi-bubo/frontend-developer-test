@@ -1,0 +1,15 @@
+@import '../../index.css';
+
+.my-button {
+    color: white;
+    text-transform: uppercase;
+    background-color: var(--button-color);
+    border: none;
+    padding: 0.7rem;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+}
+
+.my-button:hover {
+    background-color: var(--button-shadow-color);
+}

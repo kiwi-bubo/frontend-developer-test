@@ -1,0 +1,106 @@
+@import './index.css';
+
+:root {
+  --first-section-tablet-size: 20rem;
+  --first-section-phone-size: 15rem;
+}
+
+.homepage-container {
+  height: 100vh;
+  background:
+    url('../public/assets/illustration.png') center center no-repeat,
+    linear-gradient(to right,
+      var(--background-first) var(--left-section-width),
+      var(--background-second) var(--right-section-width));
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-weight: bold;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+main section {
+  box-sizing: border-box;
+  padding: 5rem 4rem 0 4rem;
+}
+
+main section p {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.title-section {
+  width: var(--left-section-width);
+}
+
+.title {
+  font-size: xx-large;
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+
+.description-section {
+  width: var(--right-section-width);
+}
+
+.sub-title {
+  color: var(--secondary-color);
+  margin-bottom: 0;
+}
+
+.description-section p {
+  font-size: smaller;
+}
+
+@media (max-width: 960px) {
+  .homepage-container {
+    height: 100vh;
+    background:
+      url('../public/assets/illustration.png') top right no-repeat,
+      linear-gradient(
+        to bottom,
+        var(--background-first) var(--top-section-height),
+        var(--background-second) var(--bottom-section-height));
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .title-section {
+    height: var(--first-section-tablet-size);
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .description-section {
+    width: 100%;
+    height: calc(100% - var(--first-section-tablet-size));
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 736px) {
+  .homepage-container {
+    height: 100vh;
+    background:
+      linear-gradient(
+        to bottom,
+        var(--background-first) var(--top-section-height),
+        var(--background-second) var(--bottom-section-height));
+  }
+
+  .title-section {
+    height: var(--first-section-phone-size);
+  }
+}
