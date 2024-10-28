@@ -10,8 +10,8 @@
   --background-second: #EAF6F4;
   --left-section-width: calc(100% * (2 / 3));
   --right-section-width: calc(100% - var(--left-section-width));
-  --top-section-heght: 50%;
-  --bottom-section-height: calc(100% - var(--top-section-heght));
+  --top-section-height: 50%;
+  --bottom-section-height: calc(100% - var(--top-section-height));
 }
 
 html body {
